@@ -1,0 +1,38 @@
+@import '../../Variables.module.scss';
+
+.card {
+    margin: 0;
+    padding: $default-padding;
+    position: relative;
+    border-radius: $default-border-radius;
+    transition: $default-bgcolor-transition;
+    font-family: $default-font;
+
+    &.light {
+        background-color: $div-color-light;
+    }
+
+    &.dark {
+        background-color: $div-color-dark;
+    }
+}
+
+.light {
+    div, p, table, ul, ol, dl {
+        color: $font-color-light;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        color: $accent-color-light;
+    }
+}
+
+.dark {
+    div, p, table, ul, ol, dl {
+        color: $font-color-dark;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        color: $accent-color-dark;
+    }
+}

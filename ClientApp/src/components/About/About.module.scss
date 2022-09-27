@@ -1,0 +1,37 @@
+@import '../../Variables.module.scss';
+
+.about {
+    padding: 20px 40px;
+    text-align: center;
+}
+
+.params-dict {
+    dt {
+        float: left;
+        clear: left;
+        width: 30%;
+        font-weight: bold;
+
+        &::after {
+            content: ':';
+        }
+    }
+
+    dt, dd {
+        text-align: left;
+        padding-bottom: $default-padding;
+    }
+}
+
+.exit-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: $default-padding;
+}
+
+@media screen and (max-width: 500px) {
+    .about {
+        padding: 20px 30px;
+    }
+}

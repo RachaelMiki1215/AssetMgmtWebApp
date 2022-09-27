@@ -1,0 +1,41 @@
+@import '../../Variables.module.scss';
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 250px;
+    padding: $default-padding;
+    width: auto;
+}
+
+.buttons {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: $default-padding;
+    display: flex;
+    flex-direction: row;
+    gap: $default-padding;
+}
+
+.theme-toggle {
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin: $default-padding;
+}
+
+@media screen and (max-width: 500px) {
+    .content {
+        top: 70px;
+        left: 0;
+        height: auto;
+    }
+
+    .theme-toggle {
+        right: initial;
+        top: initial;
+        left: 0;
+        bottom: 0;
+    }
+}

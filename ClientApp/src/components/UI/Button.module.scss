@@ -1,0 +1,58 @@
+@import "../../Variables.module.scss";
+
+.button,
+.round-button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+
+  &:hover > .icon {
+    transform: scale(1.4);
+  }
+}
+
+.icon {
+  width: 60%;
+  height: 60%;
+  transition: $default-fontcolor-transition, all 0.2s ease-in-out;
+}
+
+.button {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+
+  .icon {
+    &.light {
+      color: $font-color-light;
+    }
+
+    &.dark {
+      color: $font-color-dark;
+    }
+  }
+}
+
+.round-button {
+  border-radius: 50%;
+  transition: $default-bgcolor-transition;
+
+  &.light {
+    background-color: $accent-color-light;
+  }
+
+  &.dark {
+    background-color: $accent-color-dark;
+  }
+
+  .icon {
+    &.light {
+      color: $div-color-light;
+    }
+
+    &.dark {
+      color: $div-color-dark;
+    }
+  }
+}

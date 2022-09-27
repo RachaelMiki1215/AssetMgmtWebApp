@@ -1,0 +1,30 @@
+@import '../../Variables.module.scss';
+
+* {
+    font-family: $default-font;
+}
+
+.light {
+    h1, h2, h3, h4, h5, h6 {
+        color: $accent-color-light;
+    }
+}
+
+.dark {
+    h1, h2, h3, h4, h5, h6 {
+        color: $accent-color-dark;
+    }
+}
+
+.card-modal {
+    position: fixed;
+    z-index: 11;
+    height: max-content;
+    width: max-content;
+    max-height: 80vh;
+    max-width: 80vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: green;
+}

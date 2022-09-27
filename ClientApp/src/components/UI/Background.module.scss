@@ -1,0 +1,23 @@
+@import '../../Variables.module.scss';
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    padding: $default-padding;
+    box-sizing: border-box;
+    transition: $default-bgcolor-transition, $default-fontcolor-transition;
+    font-family: $default-font;
+
+    &.light {
+        background-color: $bg-color-light;
+        color: $font-color-light;
+    }
+
+    &.dark {
+        background-color: $bg-color-dark;
+        color: $font-color-dark;
+    }
+}
